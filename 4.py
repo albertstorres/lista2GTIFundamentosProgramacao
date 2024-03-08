@@ -12,11 +12,17 @@
 # o novo valor da compra.
 
 quantidade_pecas_compradas = int(input("Digite a quantidade de peças compradas: "))
+while quantidade_pecas_compradas < 0 :
+    quantidade_pecas_compradas = int(input("Digite a quantidade de peças compradas: "))
 total_compra = float(input("Digite o valor total da compra: "))
+while total_compra < 0 :
+    total_compra = float(input("Digite o valor total da compra: "))
 
+print()
 print("1 - Á vista")
 print("2 - Crédito")
 print("3 - Crédito parcelado")
+print()
 
 codigo_pagamento = int(input("Digite a opção de pagamento: "))
 
